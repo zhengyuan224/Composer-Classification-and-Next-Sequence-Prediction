@@ -28,6 +28,25 @@ The project leverages MIDI and raw audio features to perform sophisticated music
   - **CRNN**: (Hybrid) Combining CNN for feature extraction and GRU for temporal modeling.
 - **Training**: Data augmentation (noise injection, random silence, spec-augment) and BCEWithLogitsLoss for multi-label prediction.
 
+## 📦 Dataset Setup
+
+The project dataset is provided in `student_files.zip`. Before running the scripts, you must extract the contents:
+
+1. Extract `student_files.zip` into the project root.
+2. Ensure the extracted folder is named `student_files/`.
+
+The directory structure should look like this:
+```text
+Composer-Classification-and-Next-Sequence-Prediction/
+├── student_files/
+│   ├── task1_composer_classification/
+│   ├── task2_next_sequence_prediction/
+│   └── task3_audio_genre_tagging/
+├── task1_composer.py
+├── ...
+└── README.md
+```
+
 ## 🛠️ Installation
 
 Ensure you have Python installed, then install the required dependencies:
@@ -42,6 +61,8 @@ pip install torch torchaudio librosa pretty_midi music21 pandas numpy scikit-lea
 - `task2_sequence.py`: Implementation for sequence prediction.
 - `task3_audio.py`: Implementation for audio genre tagging.
 - `all_code.py`: Unified script containing all experiments and model pipelines.
+- `student_files/`: Directory containing project datasets (extracted from `student_files.zip`).
+- `student_files.zip`: Compressed dataset file.
 
 ## 📊 Results & Evaluation
 
