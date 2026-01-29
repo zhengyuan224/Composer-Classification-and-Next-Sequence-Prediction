@@ -30,10 +30,11 @@ The project leverages MIDI and raw audio features to perform sophisticated music
 
 ## 📦 Dataset Setup
 
-The project dataset is provided in `student_files.zip`. Before running the scripts, you must extract the contents:
+The dataset (`student_files.zip`) is not included in this repository due to its large size. To run the project:
 
-1. Extract `student_files.zip` into the project root.
-2. Ensure the extracted folder is named `student_files/`.
+1. Obtain the `student_files.zip` file.
+2. Extract it into the project root directory.
+3. Ensure the extracted folder is named `student_files/`.
 
 The directory structure should look like this:
 ```text
@@ -61,8 +62,8 @@ pip install torch torchaudio librosa pretty_midi music21 pandas numpy scikit-lea
 - `task2_sequence.py`: Implementation for sequence prediction.
 - `task3_audio.py`: Implementation for audio genre tagging.
 - `all_code.py`: Unified script containing all experiments and model pipelines.
-- `student_files/`: Directory containing project datasets (extracted from `student_files.zip`).
-- `student_files.zip`: Compressed dataset file.
+- `student_files/`: Local directory containing project datasets (should be extracted here).
+- `.gitignore`: Configured to ignore the large dataset file.
 
 ## 📊 Results & Evaluation
 
